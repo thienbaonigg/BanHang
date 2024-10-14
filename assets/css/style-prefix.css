@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee 
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -2154,10 +2140,6 @@ footer {
 \*-----------------------------------*/
 
 
-/**
- * responsive larger than 480px screen
- */
-
 @media (min-width: 480px) {
 
   /**
@@ -2279,14 +2261,6 @@ footer {
 
 }
 
-
-
-
-
-/**
- * responsive larger than 570px screen
- */
-
 @media (min-width: 570px) {
 
   /**
@@ -2396,14 +2370,6 @@ footer {
   .blog-card { min-width: -webkit-calc(50% - 15px); min-width: calc(50% - 15px); }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 768px screen
- */
 
 @media (min-width: 768px) {
 
@@ -2592,15 +2558,6 @@ footer {
   .footer-nav-list:not(:last-child) { margin-bottom: 0; }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 1024px screen
- */
-
 @media (min-width: 1024px) {
 
   /**
@@ -3050,14 +3007,6 @@ footer {
 
 }
 
-
-
-
-
-/**
- * responsive larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
   /**
@@ -3169,14 +3118,6 @@ footer {
   .footer-nav { padding-bottom: 50px; }
 
 }
-
-
-
-
-
-/**
- * responsive larger than 1400px screen
- */
 
 @media (min-width: 1400px) {
 
