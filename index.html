@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PaoL - eCommerce Website</title>
+  <title>Anon - eCommerce Website</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo/istockphoto-1135090585-612x612.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -31,90 +31,6 @@
 
 
   <div class="overlay" data-overlay></div>
-
-  <!--
-    - MODAL
-  -->
-
-  <div class="modal" data-modal>
-
-    <div class="modal-close-overlay" data-modal-overlay></div>
-
-    <div class="modal-content">
-
-      <button class="modal-close-btn" data-modal-close>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe to <b>PaoL</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <!--
-    - NOTIFICATION TOAST
-  -->
-
-  <div class="notification-toast" data-toast>
-
-    <button class="toast-close-btn" data-toast-close>
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-
-    <div class="toast-banner">
-      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
-    </div>
-
-    <div class="toast-detail">
-
-      <p class="toast-message">
-        Someone in new just bought
-      </p>
-
-      <p class="toast-title">
-        Rose Gold Earrings
-      </p>
-
-      <p class="toast-meta">
-        <time datetime="PT2M">2 Minutes</time> ago
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-
 
   <!--
     - HEADER
@@ -166,7 +82,7 @@
           <select name="currency">
 
             <option value="usd">USD &dollar;</option>
-            <option value="dong">VND &euro;</option>
+            <option value="eur">EUR &euro;</option>
 
           </select>
 
@@ -188,9 +104,8 @@
 
       <div class="container">
 
-        <a href="#" class="header-logo">
-          <img src="./assets/images/logo/that-time-i-got-reincarnated-as-a-slime-season-4_syzb (2).jpg"
-            alt="PaoL's logo" width="160" height="80">
+        <a href="index.html" class="header-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
         </a>
 
         <div class="header-search-container">
@@ -205,19 +120,25 @@
 
         <div class="header-user-actions">
 
-          <a href="profileLogin.html">
-            <button class="action-btn"><ion-icon name="person-outline"></ion-icon></button>
+
+          <a href="profileLogin.html"><button class="action-btn">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
           </a>
 
-          <button class="action-btn">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+          <a href="favLists.html">
+            <button class="action-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+          </a>
 
-          <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+          <a href="orderManage.html">
+            <button class="action-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+          </a>
 
         </div>
 
@@ -259,11 +180,11 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Tablet</a>
+                  <a href="tablet.html">Tablet</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="#">Headphone</a>
+                  <a href="headphone.html">Headphone</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -1569,8 +1490,8 @@
                       <a href="#" class="showcase-category">Clothes</a>
 
                       <div class="price-box">
-                        <p class="price">$30.00</p>
-                        <del>$45.00</del>
+                        <p class="price">$45.00</p>
+                        <del>$12.00</del>
                       </div>
 
                     </div>
@@ -1593,8 +1514,8 @@
                       <a href="#" class="showcase-category">Clothes</a>
 
                       <div class="price-box">
-                        <p class="price">$39.00</p>
-                        <del>$61.00</del>
+                        <p class="price">$61.00</p>
+                        <del>$9.00</del>
                       </div>
 
                     </div>
@@ -1617,8 +1538,8 @@
                       <a href="#" class="showcase-category">Clothes</a>
 
                       <div class="price-box">
-                        <p class="price">$52.00</p>
-                        <del>$77.00</del>
+                        <p class="price">$76.00</p>
+                        <del>$25.00</del>
                       </div>
 
                     </div>
@@ -1641,8 +1562,8 @@
                       <a href="#" class="showcase-category">Mens Fashion</a>
 
                       <div class="price-box">
-                        <p class="price">$45.00</p>
-                        <del>$69.00</del>
+                        <p class="price">$68.00</p>
+                        <del>$31.00</del>
                       </div>
 
                     </div>
@@ -1669,8 +1590,8 @@
                       <a href="#" class="showcase-category">Winter wear</a>
 
                       <div class="price-box">
-                        <p class="price">$30.00</p>
-                        <del>$59.00</del>
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
                       </div>
 
                     </div>
@@ -1693,8 +1614,8 @@
                       <a href="#" class="showcase-category">Winter wear</a>
 
                       <div class="price-box">
-                        <p class="price">$21.00</p>
-                        <del>$34.00</del>
+                        <p class="price">$32.00</p>
+                        <del>$20.00</del>
                       </div>
 
                     </div>
@@ -1717,8 +1638,8 @@
                       <a href="#" class="showcase-category">Jackets</a>
 
                       <div class="price-box">
-                        <p class="price">$25.00</p>
-                        <del>$50.00</del>
+                        <p class="price">$50.00</p>
+                        <del>$25.00</del>
                       </div>
 
                     </div>
@@ -1741,8 +1662,8 @@
                       <a href="#" class="showcase-category">Shorts</a>
 
                       <div class="price-box">
-                        <p class="price">$10.00</p>
-                        <del>$20.00</del>
+                        <p class="price">$20.00</p>
+                        <del>$10.00</del>
                       </div>
 
                     </div>
@@ -1779,8 +1700,8 @@
                       <a href="#" class="showcase-category">Sports</a>
 
                       <div class="price-box">
-                        <p class="price">$35.00</p>
-                        <del>$59.00</del>
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
                       </div>
 
                     </div>
@@ -1803,8 +1724,8 @@
                       <a href="#" class="showcase-category">Sports</a>
 
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$80.00</del>
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
                       </div>
 
                     </div>
@@ -1827,8 +1748,8 @@
                       <a href="#" class="showcase-category">Party wear</a>
 
                       <div class="price-box">
-                        <p class="price">$42.00</p>
-                        <del>$78.00</del>
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
                       </div>
 
                     </div>
@@ -1989,8 +1910,8 @@
                       <a href="#" class="showcase-category">Watches</a>
 
                       <div class="price-box">
-                        <p class="price">$34.00</p>
-                        <del>$50.00</del>
+                        <p class="price">$50.00</p>
+                        <del>$34.00</del>
                       </div>
 
                     </div>
@@ -2013,8 +1934,8 @@
                       <a href="#" class="showcase-category">Jewellery</a>
 
                       <div class="price-box">
-                        <p class="price">$59.00</p>
-                        <del>$80.00</del>
+                        <p class="price">$84.00</p>
+                        <del>$30.00</del>
                       </div>
 
                     </div>
@@ -2037,8 +1958,8 @@
                       <a href="#" class="showcase-category">Perfume</a>
 
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$32.00</del>
+                        <p class="price">$42.00</p>
+                        <del>$10.00</del>
                       </div>
 
                     </div>
@@ -2061,8 +1982,8 @@
                       <a href="#" class="showcase-category">Belt</a>
 
                       <div class="price-box">
-                        <p class="price">$10.00</p>
-                        <del>$22.00</del>
+                        <p class="price">$24.00</p>
+                        <del>$10.00</del>
                       </div>
 
                     </div>
@@ -3040,17 +2961,18 @@
 
             <div class="testimonial-card">
 
-              <img src="./assets/images/462543865_491279457239352_5180873620946106546_n.jpg" alt="Lê Phan"
-                class="testimonial-banner" width="80" height="80">
+              <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80"
+                height="80">
 
-              <p class="testimonial-name">Lê Phan</p>
+              <p class="testimonial-name">Alan Doe</p>
 
               <p class="testimonial-title">CEO & Founder Invision</p>
 
               <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
 
               <p class="testimonial-desc">
-                "If she is not 14 then she is not my type"said Drake.
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
               </p>
 
             </div>
@@ -3117,7 +3039,7 @@
                 <div class="service-content">
 
                   <h3 class="service-title">Next Day delivery</h3>
-                  <p class="service-desc">VN Orders Only</p>
+                  <p class="service-desc">UK Orders Only</p>
 
                 </div>
 
@@ -3586,9 +3508,21 @@
     </div>
 
   </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
