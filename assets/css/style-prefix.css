@@ -3208,3 +3208,26 @@ footer {
   }
 
 }
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 15px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #ff9966;
+}
