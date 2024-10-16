@@ -1,273 +1,271 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anon - eCommerce Website</title>
-      
-        <!--
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anon - eCommerce Website</title>
+
+  <!--
           - favicon
         -->
-        <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-      
-        <!--
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
           - custom css link
         -->
-        <link rel="stylesheet" href="./assets/css/style-prefix.css">
-        <link rel="stylesheet" href="./assets/css/productStyle.css">
-        <!--
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/productStyle.css">
+  <!--
           - google font link
         -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-          <style>
-            body {
-              font-family: 'Poppins', sans-serif;
-              background-color: #f5f5f5;
-              color: #333;
-            }
-        
-            .container {
-              max-width: 1200px;
-              margin: 50px auto;
-              padding: 20px;
-              background-color: #fff;
-              border-radius: 12px;
-              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            }
-        
-            h1 {
-              text-align: center;
-              margin-bottom: 30px;
-              font-size: 2.5rem;
-              color: #333;
-            }
-        
-            .favorite-grid {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-              gap: 30px;
-            }
-        
-            /* Product Card */
-            .product-card {
-              background-color: #fff;
-              border-radius: 12px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              padding: 20px;
-              text-align: center;
-              position: relative;
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-        
-            .product-card:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-            }
-        
-            /* Product Image */
-            .product-card img {
-              width: 100%;
-              height: 200px;
-              object-fit: cover;
-              border-radius: 10px;
-              transition: transform 0.3s ease;
-            }
-        
-            .product-card:hover img {
-              transform: scale(1.05);
-            }
-        
-            /* Product Labels */
-            .product-card .label {
-              position: absolute;
-              top: 15px;
-              left: 15px;
-              background-color: #ff6f61;
-              color: #fff;
-              padding: 5px 10px;
-              font-size: 0.8rem;
-              text-transform: uppercase;
-              border-radius: 20px;
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            }
-        
-            /* Product Name and Price */
-            .product-card h3 {
-              font-size: 1.3rem;
-              margin: 20px 0 10px;
-              color: #444;
-            }
-        
-            .product-card .price {
-              font-size: 1.2rem;
-              color: #ff6f61;
-              margin-bottom: 20px;
-              font-weight: bold;
-            }
-        
-            /* Action Buttons */
-            .actions {
-              display: flex;
-              justify-content: center;
-              gap: 10px;
-            }
-        
-            .actions button {
-              padding: 10px 18px;
-              border: none;
-              border-radius: 5px;
-              cursor: pointer;
-              font-size: 1rem;
-              transition: background-color 0.3s ease, transform 0.3s ease;
-            }
-        
-            .view-btn {
-              background-color: #4caf50;
-              color: #fff;
-            }
-        
-            .remove-btn {
-              background-color: #f44336;
-              color: #fff;
-            }
-        
-            .actions button:hover {
-              transform: translateY(-3px);
-              opacity: 0.9;
-            }
-          </style>
-      </head>
-      
-    <body>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
 
-        <header>
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-            <div class="header-top">       
-              <div class="container">       
-                <ul class="header-social-container">       
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-        
-                  <li>
-                    <a href="#" class="social-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>        
-                </ul>
-        
-                <div class="header-alert-news">
-                  <p>
-                    <b>Free Shipping</b>
-                    This Week Order Over - $55
-                  </p>
-                </div>
-        
-                <div class="header-top-actions">
-        
-                  <select name="currency">
-        
-                    <option value="usd">USD &dollar;</option>
-                    <option value="eur">EUR &euro;</option>
-        
-                  </select>
-        
-                  <select name="language">
-        
-                    <option value="en-US">English</option>
-                    <option value="es-ES">Espa&ntilde;ol</option>
-                    <option value="fr">Fran&ccedil;ais</option>
-        
-                  </select>       
-                </div>        
-              </div>        
-            </div>            
-        </header>
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #333;
+    }
 
-        <main>
+    .favorite-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
 
-            <div class="container">
-                <h1>Your Favorite Products</h1>
-            
-                <div class="favorite-grid">
-                  <!-- Product Card 1 -->
-                  <div class="product-card">
-                    <span class="label">Best Seller</span>
-                    <img src="./assets/images/products/product1.jpg" alt="Product 1">
-                    <h3>Elegant Dress</h3>
-                    <p class="price">$120.00</p>
-                    <div class="actions">
-                      <button class="view-btn">View</button>
-                      <button class="remove-btn">Remove</button>
-                    </div>
-                  </div>
-            
-                  <!-- Product Card 2 -->
-                  <div class="product-card">
-                    <span class="label">New</span>
-                    <img src="./assets/images/products/product2.jpg" alt="Product 2">
-                    <h3>Classic Leather Bag</h3>
-                    <p class="price">$220.00</p>
-                    <div class="actions">
-                      <button class="view-btn">View</button>
-                      <button class="remove-btn">Remove</button>
-                    </div>
-                  </div>
-            
-                  <!-- Product Card 3 -->
-                  <div class="product-card">
-                    <img src="./assets/images/products/product3.jpg" alt="Product 3">
-                    <h3>Stylish Sneakers</h3>
-                    <p class="price">$89.00</p>
-                    <div class="actions">
-                      <button class="view-btn">View</button>
-                      <button class="remove-btn">Remove</button>
-                    </div>
-                  </div>
-            
-                  <!-- Product Card 4 -->
-                  <div class="product-card">
-                    <span class="label">Discount 20%</span>
-                    <img src="./assets/images/products/product4.jpg" alt="Product 4">
-                    <h3>Elegant Earrings</h3>
-                    <p class="price">$29.00</p>
-                    <div class="actions">
-                      <button class="view-btn">View</button>
-                      <button class="remove-btn">Remove</button>
-                    </div>
-                  </div>
-            
-                  <!-- Add more products as needed -->
-                </div>
-              </div>
-            
-            </body>
+    /* Product Card */
+    .product-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        </main>
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
 
-        <script src="./assets/js/script.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    /* Product Image */
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
 
-    </body>
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Product Labels */
+    .product-card .label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #ff6f61;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      border-radius: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Product Name and Price */
+    .product-card h3 {
+      font-size: 1.3rem;
+      margin: 20px 0 10px;
+      color: #444;
+    }
+
+    .product-card .price {
+      font-size: 1.2rem;
+      color: #ff6f61;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Action Buttons */
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .actions button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .view-btn {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .remove-btn {
+      background-color: #f44336;
+      color: #fff;
+    }
+
+    .actions button:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header-top">
+      <div class="container">
+        <ul class="header-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <a href="javascript:history.back()" class="back-btn">&larr; Back</a>
+    <div class="container">
+      <h1>Your Favorite Products</h1>
+
+      <div class="favorite-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <img src="./assets/images/products/dress.webp" alt="Product 1">
+          <h3>Elegant Dress</h3>
+          <p class="price">$75.00</p>
+          <div class="actions">
+            <a href="dress.html"><button class="view-btn">View</button></a>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img src="./assets/images/products/leather_bag.jpg" alt="Product 2">
+          <h3>Classic Leather Bag</h3>
+          <p class="price">$220.00</p>
+          <div class="actions">
+            <button class="view-btn">View</button>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img src="./assets/images/products/sneaker.webp" alt="Product 3">
+          <h3>Stylish Sneakers</h3>
+          <p class="price">$89.00</p>
+          <div class="actions">
+            <button class="view-btn">View</button>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <img src="./assets/images/products/earrings.jpg" alt="Product 4">
+          <h3>Elegant Earrings</h3>
+          <p class="price">$150.00</p>
+          <div class="actions">
+            <a href="earrings.html"><button class="view-btn">View</button></a>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+
+</body>
+
+</main>
+
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
