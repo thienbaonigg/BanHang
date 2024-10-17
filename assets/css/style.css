@@ -2431,8 +2431,7 @@ footer {
    */
 
   .testimonials-box {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     align-items: stretch;
     gap: 30px;
   }
@@ -2440,8 +2439,7 @@ footer {
   .testimonial-card { margin-bottom: 0; }
 
   .testimonial, .cta-container {
-    min-width: calc(50% - 15px);
-    width: calc(50% - 15px);
+
     margin-bottom: 0;
   }
 
@@ -2543,8 +2541,7 @@ footer {
    */
 
   .testimonial, .service {
-    min-width: calc(25% - 20px);
-    width: calc(25% - 20px);
+
   }
 
   .cta-container {
