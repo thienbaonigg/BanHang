@@ -5,58 +5,6 @@ const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
 const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 
-// modal function
-const modalCloseFunc = function () { modal.classList.add('closed') }
-
-// modal eventListener
-modalCloseOverlay.addEventListener('click', modalCloseFunc);
-modalCloseBtn.addEventListener('click', modalCloseFunc);
-
-
-
-
-
-// notification toast variables
-const notificationToast = document.querySelector('[data-toast]');
-const toastCloseBtn = document.querySelector('[data-toast-close]');
-
-// notification toast eventListener
-toastCloseBtn.addEventListener('click', function () {
-  notificationToast.classList.add('closed');
-});
-
-
-
-
-
-// mobile menu variables
-const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
-const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
-const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
-const overlay = document.querySelector('[data-overlay]');
-
-for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
-
-  // mobile menu function
-  const mobileMenuCloseFunc = function () {
-    mobileMenu[i].classList.remove('active');
-    overlay.classList.remove('active');
-  }
-
-  mobileMenuOpenBtn[i].addEventListener('click', function () {
-    mobileMenu[i].classList.add('active');
-    overlay.classList.add('active');
-  });
-
-  mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
-  overlay.addEventListener('click', mobileMenuCloseFunc);
-
-}
-
-
-
-
-
 // accordion variables
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
@@ -86,3 +34,44 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.createElement("div");
+  banner.classList.add("promo-banner");
+  banner.textContent = "Chào mừng đến với Anon! Khám phá các ưu đãi tuyệt vời ngay hôm nay.";
+
+  document.body.appendChild(banner);
+
+  // Hiệu ứng hoạt hình cho banner
+  setTimeout(() => {
+    banner.style.opacity = 1;
+    banner.style.transform = "translateY(0)";
+  }, 500);
+
+  // Sự kiện để đóng banner
+  banner.addEventListener("click", () => {
+    banner.style.opacity = 0;
+    setTimeout(() => banner.remove(), 600);
+  });
+});
+
+// CSS cho promo banner
+const style = document.createElement("style");
+style.textContent = `
+  .promo-banner {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+`;
+document.head.appendChild(style);
