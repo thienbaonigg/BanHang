@@ -2974,7 +2974,6 @@ footer {
 
   .product-featured .countdown-content { padding: 5px 10px; }
 
-  .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
 
 
 
@@ -2992,9 +2991,6 @@ footer {
   }
 
   .testimonial-card { margin-bottom: 0; }
-
-  .testimonial, .cta-container {
-  }
 
   .service { width: 100%; }
 
@@ -3091,17 +3087,13 @@ footer {
 
   .product-featured .display-number { --fs-5: 1.125rem; }
 
-  .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
+
 
 
 
   /**
    * #TESTIMONIALS, CTA, SERVICE
    */
-
-  .testimonial, .service {
-
-  }
 
   .cta-container {
     min-width: -webkit-calc(50% - 20px);
