@@ -1,4 +1,4 @@
-use strict';
+'use strict';
 
 // Mobile Menu Variables
 const mobileMenuOpenBtn = document.querySelector('[data-mobile-menu-open-btn]');
